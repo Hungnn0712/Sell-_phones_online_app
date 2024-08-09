@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "832494317517",
+    "project_id": "bandienthoaionl",
+    "storage_bucket": "bandienthoaionl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832494317517:android:97c11afd6f2c81b9401e84",
+        "android_client_info": {
+          "package_name": "com.example.cnpmnc_bandienthoaionl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3IWtVCM36aCzhm0QoH4iUBw6zac7A6GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

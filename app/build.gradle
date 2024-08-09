@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.cnpmnc_bandienthoaionl'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.cnpmnc_bandienthoaionl"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    // Loại bỏ phiên bản thư viện hỗ trợ và sử dụng phiên bản AndroidX tương thích thay thế
+// Loại bỏ 'com.android.support:support-compat:27.1.1'
+// Loại bỏ 'com.android.support:support-core-utils:27.1.1'
+// Loại bỏ 'com.android.support:support-core-ui:27.1.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.6.1' // Tương thích với androidx.appcompat:appcompat:1.6.1
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
+    implementation 'com.firebaseui:firebase-ui-database:6.2.0'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+// Kiểm tra xem phiên bản FirebaseUI này có tương thích với Firebase 20.0.4
+    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.70' // Tương thích với phiên bản Kotlin này
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0' // Đảm bảo phiên bản tương thích với Glide 4.16.0
+
+}

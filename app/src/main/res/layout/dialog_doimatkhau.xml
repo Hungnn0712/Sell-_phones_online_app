@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/doimk"
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:text="ĐỔI MẬT KHẨU"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/mkcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu cũ"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/mkmoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập mật khẩu mới"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/nhaplaimkmoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại mật khẩu mới"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPassword"
+        android:maxLines="1"/>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/capnhatmkmoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Lưu thay đổi"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/huydoimk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Hủy"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+</LinearLayout>
+
